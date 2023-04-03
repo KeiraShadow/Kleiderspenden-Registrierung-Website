@@ -1,0 +1,65 @@
+/* Titel- und Logobereich */
+.logo {
+  width: 150px;
+  height: 150px;
+  background-image: url("logo.png");
+  background-size: contain;
+}
+
+/* Header- und Navigation */
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  color: #3d3b3b;
+  font-size: 2rem;
+}
+
+.navbar-nav li {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #4c4a4a3a !important;
+}
+
+/* Content-Bereich */
+.container {
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+}
+
+/* Footer und rechtliche Hinweise */
+.footer {
+  background-color: #333;
+  color: #b8b5b5;
+  padding: 1rem;
+}
+
+/* Responsives Layout */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .footer {
+    font-size: 0.8rem;
+  }
+}
