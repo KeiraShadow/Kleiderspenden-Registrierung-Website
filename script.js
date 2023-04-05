@@ -3,4 +3,9 @@ $(document).ready(function() {
     $('#accordionExample').collapse({
       toggle: false
     });
+    $('#submit1').click(function() {
+        // Code to be executed when the button is clicked
+        // For example, show an alert message
+        alert('Button clicked!');
+    });
   });
