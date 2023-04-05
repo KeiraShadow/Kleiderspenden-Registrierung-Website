@@ -12,17 +12,44 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!-- CSS Datei-->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- CSS Datei-->
     <link rel="stylesheet" href="main.css">
+   
   </head>
 
 <body>
   <header>
     <!-- place navbar here -->
-
+ 
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img classs="img-responsive" width="100px" height="80px" src="https://cdn-icons-png.flaticon.com/512/3047/3047749.png">
+        </a>
+        <a class="navbar-brand" href="#">Kleiderspende-Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Kleider spenden</a>
+            <a class="nav-item nav-link" href="#">Neuigkeiten</a>
+            <a class="nav-item nav-link" href="#">Kontakt</a>
+            <a class="nav-item nav-link" href="#">Über uns</a>
+          </div>
+        </div>
+      </nav>
+
+     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
+          <a class="navbar-brand" href="#">
+            <img classs="img-responsive" width="100px" height="80px" src="https://cdn-icons-png.flaticon.com/512/3047/3047749.png">
+          </a>
           <a class="navbar-brand" href="#">Kleiderspende-Website
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,14 +73,14 @@
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </nav> -->
+    </header> 
     
   </header>
   
   <!-- Überschrift main-->
   <main>
-    <p style="margin-top:50px"></p>
+    <p style="margin-top:50px"></p> 
     <div class="card text-black text-center">
       <div class="card-header">
         <h1>Kleider spenden und was gutes tun</h1>
@@ -63,72 +90,139 @@
         <h5 class="card-title">Per Abholung oder Vorort</h5>
         <p class="card-text">Haben Sie Kleidung die sie nicht mehr nutzen? Ihnen ist diese jedoch zu schade um sie zu entsorgen? Dann spenden Sie doch!</p>
         <p class="card-text">Wir freuen uns Ihr Kleidung an ein bedürftige Region Ihrer Wahl zu liefern</p>
-       
+ 
       </div>
     </div>
     <!--Placeholder-->
     <p style="margin-top:50px"></p>
 
-  <!-- Formular -->
-    <div class="container">
-      <div class="card text-black">
-      <form>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="pickup" name="pickup">
-          <label class="form-check-label" for="pickup">Ich möchte die Kleiderspende persönlich an der Geschäftsstelle abgeben.</label>
-        </div>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Mark Müller" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="beispiel.beispiel@gmx.de" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Telefon:</label>
-          <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="0221/112233" required>
-        </div>
-        <div class="form-group">
-          <label for="type">Art der Kleidung:</label>
-          <select class="form-control" id="type" name="type" required>
-            <option value="">Bitte auswählen</option>
-            <option value="Oberteile">Oberteile</option>
-            <option value="Hosen">Hosen</option>
-            <option value="Schuhe">Schuhe</option>
-            <option value="Accessoires">Accessoires</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="area">Aktuelles Krisengebiet:</label>
-          <select class="form-control" id="area" name="area" required>
-            <option value="">Bitte auswählen</option>
-            <option value="Afghanistan">Afghanistan</option>
-            <option value="Syrien">Syrien</option>
-            <option value="Jemen">Jemen</option>
-            <option value="Sudan">Sudan</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="address">Straße und Hausnummer</label>
-          <input type="text" class="form-control" id="straseHausnummer" name="straseHausnummer" placeholder="Jans Neumann Straße 13" required>
-        </div>
-        <div class="form-group">
-          <label for="address">Stadt</label>
-          <input type="text" class="form-control" id="stadt" name="stadt" placeholder="Köln" required>
-        </div>
-        <div class="form-group">
-          <label for="address">Postleitzahl</label>
-          <input type="text" class="form-control" id="postleitzahl" name="postleitzahl" placeholder="50667" required>
-        </div>
-        <br>
-        <!--Center Button-->
-        <div class="col text-center">
-        <button type="submit" class="btn btn-secondary ">Senden</button>
-        </div>
-      </form>
+  <!--Placeholder-->
+  <p style="margin-top:25px"></p>
+  
+  <!-- HTML code for accordion title -->
+  <div class="card text-black text-center">
+    <div class="card-header" id="accordionheader">
+      <h2>Wählen Sie aus, wie Sie Ihre Spende abgeben</h2>
     </div>
+  </div>
+
+   <!--Placeholder-->
+   <p style="margin-top:25px"></p>
+
+  <!--Accordion Collapse for the Form-->
+  <div class="accordion" id="accordionExample">
+
+    <div class="card text-center bg-dark">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Übergabe an der Geschäftsstelle
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body bg-light">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Mark Müller" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="beispiel.beispiel@gmx.de" required>    
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon:</label>
+              <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="0221/112233" required>  
+            </div>
+            <div class="form-group">
+              <label for="type">Art der Kleidung:</label>
+              <select class="form-control" id="type" name="type" required>
+                <option value="">Bitte auswählen</option>
+                <option value="Oberteile">Oberteile</option>
+                <option value="Hosen">Hosen</option>
+                <option value="Schuhe">Schuhe</option>
+                <option value="Accessoires">Accessoires</option>
+              </select>
+              <label for="area">Aktuelles Krisengebiet:</label>
+              <select class="form-control" id="area" name="area" required>
+                <option value="">Bitte auswählen</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Syrien">Syrien</option>
+                <option value="Jemen">Jemen</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Ukraine">Ukraine</option>
+              </select>           
+            </div>
+          </form>
+           <!--Center Button-->
+           <p style="margin-top:25px"></p>
+           <div class="col text-center">
+           <button type="submit" class="btn btn-secondary ">Senden</button>
+           </div>
+           <p style="margin-top:25px"></p>
+        </div>
+      </div>
     </div>
+    
+    <p style="margin-top:25px"></p>
+
+    <div class="card text-center bg-dark">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Abholung
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body bg-light">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Mark Müller" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="beispiel.beispiel@gmx.de" required>    
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon:</label>
+              <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="0221/112233" required>  
+            </div>
+            <div class="form-group">
+              <label for="type">Art der Kleidung:</label>
+              <select class="form-control" id="type" name="type" required>
+                <option value="">Bitte auswählen</option>
+                <option value="Oberteile">Oberteile</option>
+                <option value="Hosen">Hosen</option>
+                <option value="Schuhe">Schuhe</option>
+                <option value="Accessoires">Accessoires</option>
+              </select>
+              <label for="area">Aktuelles Krisengebiet:</label>
+              <select class="form-control" id="area" name="area" required>
+                <option value="">Bitte auswählen</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Syrien">Syrien</option>
+                <option value="Jemen">Jemen</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Ukraine">Ukraine</option>
+              </select>
+            </div>           
+          </form>
+          
+           <!--Center Button-->
+           <p style="margin-top:25px"></p>
+           <div class="col text-center">
+           <button type="submit" class="btn btn-secondary ">Senden</button>
+           </div>
+           <p style="margin-top:25px"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
     <!--Placeholder-->
     <p style="margin-top:50px"></p>
   </main>
