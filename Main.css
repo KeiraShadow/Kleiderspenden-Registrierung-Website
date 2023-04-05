@@ -8,12 +8,12 @@ header {
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 black;
-}
 
+}/* an element inside the header*/
 header * {
     display: inline;
 }
-
+/*margin between header elements*/
 header li {
     margin: 20px;
 }
@@ -23,42 +23,55 @@ header li a {
     text-decoration: none;
 }
 
-body {
+.navbar-brand img {
+    max-height: 80px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+  body {
     height: 125vh;
     background-image: url('https://www.closetsbydesign.com/wp-content/uploads/2020/01/cbd_hangers-scaled.jpg');
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;
-    padding: 30px;
-    
+    padding: 30px;  
 }
-
+ 
 main {
-    color: rgb(0, 0, 0);
-      
-}
+    color: rgb(0, 0, 0);      
+} 
 
 .card {
-   
-    
-      background-color: rgba(255, 255, 255, 0.83);
-    }
-
-
-
-
-footer {
-    background-color: #f8f9fa;
-    padding: 20px;
-    font-size: 14px;
-    color: #6c757d;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    
-    width: 100%;
-  } 
+    max-width: 800px;
+    margin: 0 auto; /* center the container */
+    background-color: rgba(255, 255, 255, 0.83);
+  }
   
+/* Custom CSS for accordion toggle button */
+.btn-link {
+    color: #fffcfc; /* change the color to black */
+    text-decoration: none; /* remove underline */
+  }
+
+/* Custom CSS for accordion container */
+#accordionExample {
+    max-width: 800px;
+    margin: 0 auto; /* center the container */
+  }
+
+ footer {
+        background-color: #f8f9fa;
+        padding: 20px;
+        font-size: 14px;
+        color: #6c757d;
+        text-align: center;
+        position: fixed;
+        bottom: 0;       
+        width: 100%;
+    } 
+      
+
   @media (min-width: 576px) {
     footer {
       position: static;
