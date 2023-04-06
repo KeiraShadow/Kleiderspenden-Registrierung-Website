@@ -1,4 +1,3 @@
-
 // Start at the top of the page
 window.scrollTo( (document.top))
 
@@ -42,8 +41,7 @@ $(document).ready(function() {
         // Fügen Sie die Ausgabezeichenfolge zum div-Element "output" hinzu
         $('#Ausgabe2').html(outputString);
       }); */
-      
-      $('#submit2').click(function() {
+        $('#submit2').click(function() {
         // Holen Sie die Werte aus dem Formular
         var artDerKleidung = $('#type2').val();
         var kriesengebiet = $('#area2').val();
@@ -65,9 +63,6 @@ $(document).ready(function() {
     
         // Zeigen Sie die Ausgabezeichenfolge als Alert-Nachricht an
         alert(outputString);
-    });
-    
-
-
+    });    
   });
 ;
