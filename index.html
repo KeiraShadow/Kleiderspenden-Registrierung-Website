@@ -22,20 +22,17 @@
   </head>
 
 <body>
-
     <!-- place navbar here -->
-    <header>
-    
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <header>   
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <a class="navbar-brand mx-auto" href="#">
-          <img classs="img-responsive" width="100px" height="80px" src="https://cdn-icons-png.flaticon.com/512/3047/3047749.png">
+          <img classs="img-responsive" src="icon.png">
         </a>
         <a class="navbar-brand mx-auto" href="#">Kleiderspende-Website</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Kleider spenden</a>
             <a class="nav-item nav-link" href="#">Neuigkeiten</a>
@@ -49,14 +46,14 @@
   <!-- Überschrift main-->
   <main>
     <p style="margin-top:50px"></p> 
-    <div class="card text-black text-center">
+    <div class="card text-black text-center ">
       <div class="card-header">
         <h1>Kleider spenden und was gutes tun</h1>
       </div>
       <div class="card-body">
         
         <h5 class="card-title">Per Abholung oder Vorort</h5>
-        <p class="card-text">Haben Sie Kleidung die sie nicht mehr nutzen? Ihnen ist diese jedoch zu schade um sie zu entsorgen? Dann spenden Sie doch!</p>
+        <p class="card-text">Haben Sie Kleidung die Sie nicht mehr nutzen? Ihnen ist diese jedoch zu schade, um sie zu entsorgen? Dann spenden Sie doch!</p>
         <p class="card-text">Wir freuen uns Ihr Kleidung an ein bedürftige Region Ihrer Wahl zu liefern</p>
  
       </div>
@@ -127,14 +124,11 @@
           </form>
            <!--Center Button-->
            <p style="margin-top:25px"></p>
-           <div class="col text-center">
-            <button type="button" class="btn btn-secondary" id="submit1">Submit</button>
+           <div class="mx-auto text-center">
+            <button type="button" class="btn btn-outline-dark" id="submit1">Senden</button>
            </div>
            <p style="margin-top:25px"></p>
-           <div class="response">
-            <label for="response">Response:</label>
-            <textarea class="form-control" id="response" name="response" rows="5" readonly></textarea>
-          </div>
+
         </div>
       </div>
     </div>
@@ -154,19 +148,19 @@
           <form>
             <div class="form-group">
               <label for="name">Name:</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Mark Müller" required>
+              <input type="text" class="form-control" id="name2" name="name" placeholder="Mark Müller" required>
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="beispiel.beispiel@gmx.de" required>    
+              <input type="email" class="form-control" id="email2" name="email" placeholder="beispiel.beispiel@gmx.de" required>    
             </div>
             <div class="form-group">
               <label for="phone">Telefon:</label>
-              <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="0221/112233" required>  
+              <input type="tel" class="form-control" id="telefon2" name="telefon" placeholder="0221/112233" required>  
             </div>
             <div class="form-group">
               <label for="type">Art der Kleidung:</label>
-              <select class="form-control" id="type" name="type" required>
+              <select class="form-control" id="type2" name="type" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Oberteile">Oberteile</option>
                 <option value="Hosen">Hosen</option>
@@ -174,7 +168,7 @@
                 <option value="Accessoires">Accessoires</option>
               </select>
               <label for="area">Aktuelles Krisengebiet:</label>
-              <select class="form-control" id="area" name="area" required>
+              <select class="form-control" id="area2" name="area" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Syrien">Syrien</option>
@@ -182,25 +176,49 @@
                 <option value="Sudan">Sudan</option>
                 <option value="Ukraine">Ukraine</option>
               </select>
-            </div>           
+            </div>  
+            <div class="form-group">
+              <label for="address">Straße und Hausnummer</label>
+              <input type="text" class="form-control" id="straseHausnummer2" name="straseHausnummer" placeholder="Jans Neumann Straße 13" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Stadt</label>
+              <input type="text" class="form-control" id="stadt2" name="stadt" placeholder="Köln" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Postleitzahl</label>
+              <input type="text" class="form-control" id="postleitzahl2" name="postleitzahl" placeholder="50667" required>
+            </div>    
+
           </form>
 
            <!--Center Button-->
            <p style="margin-top:25px"></p>
-           <div class="col text-center">
-           <button type="submit" class="btn btn-secondary ">Senden</button>
+           <div class="mx-auto text-center">
+           <button type="submit" class="btn btn-outline-dark" id="submit2">Senden</button>
            </div>
            <p style="margin-top:25px"></p>
+
+           <!--Ausgabe nach BUttonclick
+           <div id="Ausgabe2"></div> -->
+
+           <!-- nooooo
+           <div class="Ausgabe2 ">
+            <label for="Ausgabe2">Ausgabe2:</label>
+            <textarea class="form-control" id="Ausgabe2" name="Ausgabe2" rows="10" readonly></textarea>
+          </div> 
+           -->
+
         </div>
       </div>
     </div>
   </div>
  
     <!--Placeholder-->
-    <p style="margin-top:50px"></p>
+    <p style="margin-top:150px"></p>
   </main>
  
-    <footer class="bg-light text-center text-lg-start ">
+    <footer class="bg-light text-center fixed  ">
       <div class="container p-4">
         <div class="row mx-auto">
           
@@ -217,7 +235,7 @@
         </div>
       </div>
     </footer>    
-  <!-- <script src="https://raw.githubusercontetn.com/KeiraShadow/Kleiderspenden-Registrierung-Website/main/script.js"></script> -->
-  <script src="script.js"></script>
+  
+    <script src="script.js"></script>
 </body>
 </html>
