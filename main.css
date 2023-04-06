@@ -1,10 +1,5 @@
 header {
-    background-color: white;
-    /* position: fixed; 
-    top: 0;
-    left: 0;
-    right: 0; */
-    display: flex;
+    background-color: white;    
     align-items: center;
     box-shadow: 0 0 25px 0 black;
 
@@ -12,6 +7,7 @@ header {
 header * {
     display: inline;
 }
+
 /*margin between header elements*/
 header li {
     margin: 20px;
@@ -22,20 +18,31 @@ header li a {
     text-decoration: none;
 }
 
-.navbar-brand img {
+
+.navbar {
+    /*  position: flex;  it should be fixed but for some reason it moves when it is fixed and it doesnt when its flex????*/
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    margin-top: 0px;
+  }
+  .navbar-brand img {
+    width:100px;
+    height:80px;
     max-height: 80px;
     margin-right: 20px;
     margin-left: 40px;
-}
 
+}
 
   body {
     height: 125vh; 
-    background-image: url('https://www.closetsbydesign.com/wp-content/uploads/2020/01/cbd_hangers-scaled.jpg');
+    /*background-image: url('https://www.closetsbydesign.com/wp-content/uploads/2020/01/cbd_hangers-scaled.jpg');*/
+    background-image: url('cbd_hangers-scaled.jpeg');
     background-size: cover;
     font-family: sans-serif;
-    margin-top: 80px;
-    padding: 30px; 
+    /*margin-top: 250px; */
+    /* padding: 30px; */
     /*padding-bottom: 100px; */
 }
  
@@ -61,11 +68,13 @@ main {
     margin: 0 auto; /* center the container */
   }
 
+
   footer {
     background-color: white;
     bottom: 0;
     left: 0;
     width: 100%;
+    
   }
   
   footer h5 {
