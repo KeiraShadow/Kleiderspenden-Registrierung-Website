@@ -119,6 +119,17 @@ main {
     margin-bottom: 0;
   }
 
+  .fa-facebook {
+    color: rgb(0, 0, 0);
+  }
+  
+  .fa-square-instagram{
+    color: rgb(0, 0, 0);
+  }
+
+  .fa-envelope{
+    color: rgb(0, 0, 0);
+  }
  /* @media (min-width: 576px) {
     footer {
       position: static;
