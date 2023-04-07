@@ -6,63 +6,60 @@ $(document).ready(function() {
     $('#accordionExample').collapse({
       toggle: false
     });
+    
     $('#submit1').click(function() {
-        // Code to be executed when the button is clicked
-        // For example, show an alert message
-        alert('Danke!');
-    });
-    /*$('#submit2').click(function() {
-        // Code to be executed when the button is clicked
-        // For example, show an alert message
-        alert('Danke!');
-    });*/
-    
-    /*
-    $('#submit2').click(function() {
         // Holen Sie die Werte aus dem Formular
-        var artDerKleidung = $('#type2').val();
-        var kriesengebiet = $('#area2').val();
-        var StraseHausnummer = $('#straseHausnummer2').val();
-        var Stadt = $('#stadt2').val();
-        var postleitzahl = $('#postleitzahl2').val();
-      
-        // Holen Sie die aktuelle Zeit und das Datum
-        var currentTime = new Date();
-        var currentDateTime = currentTime.toLocaleString();
-      
-        // Erstellen Sie eine Ausgabezeichenfolge mit den Werten und der aktuellen Zeit und Datum
-        var outputString = "Art der Kleidung: " + artDerKleidung + "<br>" +
-                           "Kriesengebiet: " + kriesengebiet + "<br>" +
-                           "Straße & Hausnummer: " + StraseHausnummer + "<br>" +
-                           "Stadt: " + Stadt + "<br>" +
-                           "Postleitzahl: " + postleitzahl + "<br>" +
-                           "Aktuelle Zeit und Datum: " + currentDateTime;
-      
-        // Fügen Sie die Ausgabezeichenfolge zum div-Element "output" hinzu
-        $('#Ausgabe2').html(outputString);
-      }); */
+        var artDerKleidung = $('#type1').val();
+        var kriesengebiet = $('#area1').val();
+         // Überprüfen, ob alle erforderlichen Felder ausgefüllt sind
+        if (artDerKleidung.trim() === '' || kriesengebiet.trim() === '') {
+        alert('Bitte füllen Sie alle mit * gekenzeichneten Felder aus.');
+        return; // Stoppt die Ausführung des restlichen Codes
+        }
+        {
+          // Holt die aktuelle Zeit und das Datum
+          var currentTime = new Date();
+          var currentDateTime = currentTime.toLocaleString();
+          // Ausgabe mit den Werten und der aktuellen Zeit, Datum
+          var outputString = "Art der Kleidung: " + artDerKleidung + "\n" +
+                             "Kriesengebiet: " + kriesengebiet + "\n" +
+                             "Aktuelle Zeit und Datum: " + currentDateTime;
+          
+          // Zeigt eine Alert-Nachricht an
+          alert(outputString);
+        } 
+      });  
+
         $('#submit2').click(function() {
-        // Holen Sie die Werte aus dem Formular
-        var artDerKleidung = $('#type2').val();
-        var kriesengebiet = $('#area2').val();
-        var StraseHausnummer = $('#straseHausnummer2').val();
-        var Stadt = $('#stadt2').val();
-        var postleitzahl = $('#postleitzahl2').val();
-    
-        // Holen Sie die aktuelle Zeit und das Datum
-        var currentTime = new Date();
-        var currentDateTime = currentTime.toLocaleString();
-    
-        // Erstellen Sie eine Ausgabezeichenfolge mit den Werten und der aktuellen Zeit und Datum n anstatt br
-        var outputString = "Art der Kleidung: " + artDerKleidung + "\n" +
-                           "Kriesengebiet: " + kriesengebiet + "\n" +
-                           "Straße & Hausnummer: " + StraseHausnummer + "\n" +
-                           "Stadt: " + Stadt + "\n" +
-                           "Postleitzahl: " + postleitzahl + "\n" +
-                           "Aktuelle Zeit und Datum: " + currentDateTime;
-    
-        // Zeigen Sie die Ausgabezeichenfolge als Alert-Nachricht an
-        alert(outputString);
-    });    
-  });
+          // Holen Sie die Werte aus dem Formular
+          var artDerKleidung = $('#type2').val();
+          var kriesengebiet = $('#area2').val();
+          var StraseHausnummer = $('#straseHausnummer2').val();
+          var Stadt = $('#stadt2').val();
+          var postleitzahl = $('#postleitzahl2').val();
+           // Überprüfen, ob alle erforderlichen Felder ausgefüllt sind
+          if (artDerKleidung.trim() === '' || kriesengebiet.trim() === '' || StraseHausnummer.trim() === '' || Stadt.trim() === '' || postleitzahl.trim() === '') {
+          alert('Bitte füllen Sie alle mit * gekenzeichneten Felder aus.');
+          return; // Stoppt die Ausführung des restlichen Codes
+          }
+         //if else um zu testen ob die Eingabe der Postleitzahl mit 05 begint sonst else Warnung
+          if (postleitzahl.startsWith('50')) {
+            // Holt die aktuelle Zeit und das Datum
+            var currentTime = new Date();
+            var currentDateTime = currentTime.toLocaleString();
+            // Ausgabe mit den Werten und der aktuellen Zeit, Datum
+            var outputString = "Art der Kleidung: " + artDerKleidung + "\n" +
+                               "Kriesengebiet: " + kriesengebiet + "\n" +
+                               "Straße & Hausnummer: " + StraseHausnummer + "\n" +
+                               "Stadt: " + Stadt + "\n" +
+                               "Postleitzahl: " + postleitzahl + "\n" +
+                               "Aktuelle Zeit und Datum: " + currentDateTime;
+            // Zeigt eine Alert-Nachricht an
+            alert(outputString);
+          } else {
+            // Zeigt eine Fehlermeldung an, wenn die Postleitzahl nicht mit '50' beginnt
+            alert('Die Postleitzahl muss mit "50" beginnen.');
+          }
+        });                          
+      });      
 ;
