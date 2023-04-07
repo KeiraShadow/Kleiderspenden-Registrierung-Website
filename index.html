@@ -16,24 +16,25 @@
    <!-- Bootstrap JavaScript -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-   
-    <!-- CSS Datei-->
+  <!--FontAwesome-->
+   <script src="https://kit.fontawesome.com/1c50180c6e.js" crossorigin="anonymous"></script>
+  <!-- CSS Datei-->
     <link rel="stylesheet" href="main.css">
   </head>
 
 <body>
-    <!-- place navbar here -->
+    <!-- Navbar -->
     <header>   
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <a class="navbar-brand mx-auto" href="#">
           <img classs="img-responsive" src="icon.png">
         </a>
-        <a class="navbar-brand mx-auto" href="#">Kleiderspende-Website</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-center mx-auto" href="#">Kleiderspende-Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
-          <div class="navbar-nav">
+        <div class="collapse navbar-collapse" id="Navigation">
+          <div class="navbar-nav ">
             <a class="nav-item nav-link active" href="#">Kleider spenden</a>
             <a class="nav-item nav-link" href="#">Neuigkeiten</a>
             <a class="nav-item nav-link" href="#">Kontakt</a>
@@ -43,7 +44,7 @@
       </nav>
     </header> 
     
-  <!-- Überschrift main-->
+  <!-- Scevtion 1 Überschrift und Eineitung-->
   <main>
     <!--<p style="margin-top:50px"></p> -->
     <div class="container-background">
@@ -52,18 +53,13 @@
         <h1>Kleider spenden und was gutes tun</h1>
       </div>
       <div class="card-body">
-        
         <h5 class="card-title">Per Abholung oder Vorort</h5>
         <p class="card-text">Haben Sie Kleidung die Sie nicht mehr nutzen? Ihnen ist diese jedoch zu schade, um sie zu entsorgen? Dann spenden Sie doch!</p>
         <p class="card-text">Wir freuen uns Ihr Kleidung an ein bedürftige Region Ihrer Wahl zu liefern</p>
- 
       </div>
     </div>
   </div>
    
-   <!--Placeholder-->
-  
-
    <!--Placeholder-->
    <p style="margin-top:60px"></p>
 
@@ -77,8 +73,7 @@
    <!--Placeholder-->
    <p style="margin-top:25px"></p>
 
-  
-  <!--Accordion Collapse for the Form-->
+  <!--Accordion Collapse für die Form Vor Ort Abgabe ( Formulare)-->
   <div class="accordion" id="accordionExample">
 
     <div class="card text-center bg-dark">
@@ -106,16 +101,16 @@
               <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="0221/112233" required>  
             </div>
             <div class="form-group">
-              <label for="type">Art der Kleidung:</label>
-              <select class="form-control" id="type" name="type" required>
+              <label for="type">* Art der Kleidung:</label>
+              <select class="form-control" id="type1" name="type" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Oberteile">Oberteile</option>
                 <option value="Hosen">Hosen</option>
                 <option value="Schuhe">Schuhe</option>
                 <option value="Accessoires">Accessoires</option>
               </select>
-              <label for="area">Aktuelles Krisengebiet:</label>
-              <select class="form-control" id="area" name="area" required>
+              <label for="area">* Aktuelles Krisengebiet:</label>
+              <select class="form-control" id="area1" name="area" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Syrien">Syrien</option>
@@ -128,16 +123,15 @@
            <!--Center Button-->
            <p style="margin-top:25px"></p>
            <div class="mx-auto text-center">
-            <button type="button" class="btn btn-outline-dark" id="submit1">Senden</button>
+            <button type="submit1" class="btn btn-outline-dark" id="submit1">Senden</button>
            </div>
            <p style="margin-top:25px"></p>
-
         </div>
       </div>
     </div>
-    
+    <!--Placeholder-->
     <p style="margin-top:25px"></p>
-
+    <!--Form Abholung-->
     <div class="card text-center bg-dark">
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
@@ -162,7 +156,7 @@
               <input type="tel" class="form-control" id="telefon2" name="telefon" placeholder="0221/112233" required>  
             </div>
             <div class="form-group">
-              <label for="type">Art der Kleidung:</label>
+              <label for="type">* Art der Kleidung:</label>
               <select class="form-control" id="type2" name="type" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Oberteile">Oberteile</option>
@@ -170,7 +164,7 @@
                 <option value="Schuhe">Schuhe</option>
                 <option value="Accessoires">Accessoires</option>
               </select>
-              <label for="area">Aktuelles Krisengebiet:</label>
+              <label for="area">* Aktuelles Krisengebiet:</label>
               <select class="form-control" id="area2" name="area" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Afghanistan">Afghanistan</option>
@@ -181,36 +175,24 @@
               </select>
             </div>  
             <div class="form-group">
-              <label for="address">Straße und Hausnummer</label>
+              <label for="address">* Straße und Hausnummer</label>
               <input type="text" class="form-control" id="straseHausnummer2" name="straseHausnummer" placeholder="Jans Neumann Straße 13" required>
             </div>
             <div class="form-group">
-              <label for="address">Stadt</label>
+              <label for="address">* Stadt</label>
               <input type="text" class="form-control" id="stadt2" name="stadt" placeholder="Köln" required>
             </div>
             <div class="form-group">
-              <label for="address">Postleitzahl</label>
-              <input type="text" class="form-control" id="postleitzahl2" name="postleitzahl" placeholder="50667" required>
+              <label for="address">* Postleitzahl</label>
+              <input type="text" class="form-control" id="postleitzahl2" name="postleitzahl2" placeholder="50667" required>
             </div>    
           </form>
-
            <!--Center Button-->
            <p style="margin-top:25px"></p>
            <div class="mx-auto text-center">
-           <button type="submit" class="btn btn-outline-secondary" id="submit2">Senden</button>
+           <button type="submit2" class="btn btn-outline-dark" id="submit2">Senden</button>
            </div>
            <p style="margin-top:25px"></p>
-
-           <!--Ausgabe nach BUttonclick
-           <div id="Ausgabe2"></div> -->
-
-           <!-- nooooo
-           <div class="Ausgabe2 ">
-            <label for="Ausgabe2">Ausgabe2:</label>
-            <textarea class="form-control" id="Ausgabe2" name="Ausgabe2" rows="10" readonly></textarea>
-          </div> 
-           -->
-
         </div>
       </div>
     </div>
@@ -219,7 +201,7 @@
     <!--Placeholder-->
     <p style="margin-top:60px"></p>
   </main>
- 
+   <!--Footer-->
     <footer class="bg-light text-center fixed  ">
       <div class="container p-5">
         <div class="row mx-auto">
@@ -230,14 +212,15 @@
               <li><a href="#">Datenschutz</a></li>
               <li><a href="#">Nutzungsbedingungen</a></li>
             </ul>
-         
-      
-            <p>&copy; 2023 Kleiderpsenden Website Footer. Alle Rechte vorbehalten.</p>
-          
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="mailto:your-email-address"><i class="fa-solid fa-envelope"></i></a>
+
+            <p>&copy; 2023 Kleiderpsenden Website Footer. Alle Rechte vorbehalten.</p> 
         </div>
       </div>
     </footer>    
-  
+  <!--Javascript Einbindung-->
     <script src="script.js"></script>
 </body>
 </html>
