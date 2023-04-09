@@ -11,6 +11,7 @@ $(document).ready(function() {
         // Holen Sie die Werte aus dem Formular
         var artDerKleidung = $('#type1').val();
         var kriesengebiet = $('#area1').val();
+        var Stadt = " Kölner Geschäftsstelle";
          // Überprüfen, ob alle erforderlichen Felder ausgefüllt sind
         if (artDerKleidung.trim() === '' || kriesengebiet.trim() === '') {
         alert('Bitte füllen Sie alle mit * gekenzeichneten Felder aus.');
@@ -21,8 +22,10 @@ $(document).ready(function() {
           var currentTime = new Date();
           var currentDateTime = currentTime.toLocaleString();
           // Ausgabe mit den Werten und der aktuellen Zeit, Datum
-          var outputString = "Art der Kleidung: " + artDerKleidung + "\n" +
+          var outputString = "Vielen Dank für deine Spende!\n" + "\n" +
+                             "Art der Kleidung: " + artDerKleidung + "\n" +
                              "Kriesengebiet: " + kriesengebiet + "\n" +
+                             "Ort:" + Stadt + "\n" +
                              "Aktuelle Zeit und Datum: " + currentDateTime;
           
           // Zeigt eine Alert-Nachricht an
@@ -48,10 +51,11 @@ $(document).ready(function() {
             var currentTime = new Date();
             var currentDateTime = currentTime.toLocaleString();
             // Ausgabe mit den Werten und der aktuellen Zeit, Datum
-            var outputString = "Art der Kleidung: " + artDerKleidung + "\n" +
+            var outputString = "Vielen Dank für deine Spende!\n" + "\n" +
+                               "Art der Kleidung: " + artDerKleidung + "\n" +
                                "Kriesengebiet: " + kriesengebiet + "\n" +
                                "Straße & Hausnummer: " + StraseHausnummer + "\n" +
-                               "Stadt: " + Stadt + "\n" +
+                               "Stadt/Ort: " + Stadt + "\n" +
                                "Postleitzahl: " + postleitzahl + "\n" +
                                "Aktuelle Zeit und Datum: " + currentDateTime;
             // Zeigt eine Alert-Nachricht an
