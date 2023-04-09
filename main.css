@@ -91,6 +91,7 @@ main {
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-top: 60px;
     
   }
   
@@ -114,10 +115,14 @@ main {
     color: #6c757d;
     text-decoration: none;
   }
-  
+  footer a{
+    margin: 10px;
+  }
   footer p {
     margin-bottom: 0;
+    margin-top: 0.5rem;
   }
+  
 
   .fa-facebook {
     color: rgb(0, 0, 0);
