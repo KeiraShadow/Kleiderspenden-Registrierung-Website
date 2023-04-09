@@ -85,6 +85,9 @@ main {
     border-color: rgb(199, 178, 163);
 } */
 
+.container-galerie{
+    padding-top: 60px;
+}
 
   footer {
     background-color: white;
@@ -135,6 +138,8 @@ main {
   .fa-envelope{
     color: rgb(0, 0, 0);
   }
+ 
+ 
  /* @media (min-width: 576px) {
     footer {
       position: static;
