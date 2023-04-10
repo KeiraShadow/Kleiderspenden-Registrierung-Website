@@ -7,7 +7,6 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -18,7 +17,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <!--FontAwesome-->
    <script src="https://kit.fontawesome.com/1c50180c6e.js" crossorigin="anonymous"></script>
-  <!-- CSS Datei-->
+  <!-- CSS Datei mit eignen Styles die Bootstrap nicht abdeckt-->
     <link rel="stylesheet" href="main.css">
   </head>
 
@@ -28,7 +27,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
         <a class="navbar-brand mx-auto" href="#">
           <!--Logo-->
-          <img class="img-responsive" src="Bilder/icon.png">
+          <img class="img-responsive" src="icon.png">
         </a>
         <a class="navbar-brand text-center mx-auto" href="#">Kölner-Kleiderspende</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,10 +35,10 @@
         </button>
         <div class="collapse navbar-collapse" id="Navigation">
           <div class="navbar-nav ">
-            <a class="nav-item nav-link active" href="#">Kleider spenden</a>
-            <a class="nav-item nav-link" href="#">Neuigkeiten</a>
-            <a class="nav-item nav-link" href="#">Kontakt</a>
-            <a class="nav-item nav-link" href="#">Über uns</a>
+            <a class="nav-item nav-link active" href="#accordionheader">Kleider spenden</a>
+            <a class="nav-item nav-link" href="#container-galerie">Galerie</a>
+            <a class="nav-item nav-link" href="#kontakt">Kontakt</a>
+            <a class="nav-item nav-link" href="#impressum-link">Über uns</a>
           </div>
         </div>
       </nav>
@@ -47,14 +46,17 @@
     
   <!-- Section 1 Überschrift und Eineitung-->
   <main>
-    <!--<p style="margin-top:50px"></p> -->
     <div class="container-background">
     <div class="card text-black text-center ">
       <div class="card-header">
         <h1>Kleider spenden und Gutes tun</h1>
       </div>
       <div class="card-body">
-        <p class="card-text">Haben Sie Kleidung, die Sie nicht mehr nutzen? <br>Ihnen ist diese jedoch zu schade, um sie zu entsorgen? <br>Dann spenden Sie doch! <br>Wir freuen uns darauf, Ihre Kleiderspende in eine bedürftige Region Ihrer Wahl zu bringen.</p>     
+        <p class="card-text">Haben Sie Kleidung, die Sie nicht mehr nutzen? 
+          <br>Ihnen ist diese jedoch zu schade, um sie zu entsorgen? 
+          <br>Dann spenden Sie doch! 
+          <br>Wir freuen uns darauf, Ihre Kleiderspende in eine bedürftige Region Ihrer Wahl zu bringen.
+        </p>     
       </div>
     </div>
   </div>
@@ -62,24 +64,26 @@
    <!--Placeholder-->
    <p style="margin-top:60px"></p>
 
-  <!-- HTML code for accordion title -->
+  <!-- Accordion title und Anweisungen-->
   <div class="card text-black text-center bg-light">
     <div class="card-header" id="accordionheader">
       <h2>Spenden Sie ihr Kleidung bei uns</h2>
-      <h5> Per Abholung oder Vorort</h5>
+      <h5> Per Abholung &nbsp;<i class="fa-solid fa-truck"></i> oder Vorort &nbsp;<i class="fa-solid fa-building"></i></h5>
      </div>
-      <p><br>Die Abholung ist nur möglich, bei einer Postleitzahl, die mit <b>50</b> beginnt. <br> Besitzen Sie keine <b>50</b> Postleitzahl? <br> Übergeben Sie uns gerne ihr Spende in unserer Geschäftsstelle.</p>
+      <p><br>Die Abholung ist nur möglich, bei einer Postleitzahl, die mit <b>50</b> beginnt. 
+        <br> Besitzen Sie keine <b>50</b> Postleitzahl? 
+        <br> Übergeben Sie uns gerne ihr Spende in unserer Geschäftsstelle.</p>
     </div>
  
 
    <!--Placeholder-->
    <p style="margin-top:25px"></p>
 
-  <!--Accordion Collapse für die Form Vor Ort Abgabe ( Formulare)-->
+  <!--Accordion Collapse für die Form der Vorort Abgabe ( Formular)-->
   <div class="accordion" id="accordionExample">
     
     <div class="card text-center bg-dark">
-      <div class="card-header" id="headingOne">
+      <div class="card-header " id="headingOne">
         <h2 class="mb-0">
           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Übergabe an der Geschäftsstelle
@@ -92,19 +96,19 @@
           <p> Bitte fülle alle mit * markierten Felder aus.</p>
           <form id="myForm">
             <div class="form-group">
-              <label for="name">Name:</label>
+              <i class="fa-solid fa-user"></i>&nbsp;<label for="name">Name:</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Mark Müller" required>
             </div>
             <div class="form-group">
-              <label for="email">Email:</label>
+              <i class="fa-solid fa-envelope"></i>&nbsp;<label for="email">Email:</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="beispiel.beispiel@gmx.de" required>    
             </div>
             <div class="form-group">
-              <label for="phone">Telefon:</label>
+              <i class="fa-solid fa-phone"></i>&nbsp;<label for="phone">Telefon:</label>
               <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="0221/112233" required>  
             </div>
             <div class="form-group">
-              <label for="type">* Art der Kleidung:</label>
+              <i class="fa-solid fa-shirt"></i>&nbsp;<label for="type">* Art der Kleidung:</label>
               <select class="form-control" id="type1" name="type" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Oberteile">Oberteile</option>
@@ -112,7 +116,7 @@
                 <option value="Schuhe">Schuhe</option>
                 <option value="Accessoires">Accessoires</option>
               </select>
-              <label for="area">* Aktuelles Krisengebiet:</label>
+              <i class="fa-solid fa-flag"></i>&nbsp;<label for="area">* Aktuelles Krisengebiet:</label>
               <select class="form-control" id="area1" name="area" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Afghanistan">Afghanistan</option>
@@ -123,7 +127,7 @@
               </select>           
             </div>
           </form>
-           <!--Center Button-->
+           <!--Center Button zum absenden der eingegeben Daten-->
            <p style="margin-top:25px"></p>
            <div class="mx-auto text-center">
             <button type="submit1" class="btn btn-outline-dark" id="submit1">Senden</button>
@@ -134,6 +138,7 @@
     </div>
     <!--Placeholder-->
     <p style="margin-top:25px"></p>
+
     <!--Form Abholung-->
     <div class="card text-center bg-dark">
       <div class="card-header" id="headingTwo">
@@ -148,19 +153,19 @@
           <p> Bitte fülle alle mit * markierten Felder aus.</p>
           <form>
             <div class="form-group">
-              <label for="name">Name:</label>
+              <i class="fa-solid fa-user"></i>&nbsp;<label for="name">Name:</label>
               <input type="text" class="form-control" id="name2" name="name" placeholder="Mark Müller" required>
             </div>
             <div class="form-group">
-              <label for="email">Email:</label>
+              <i class="fa-solid fa-envelope"></i>&nbsp;<label for="email">Email:</label>
               <input type="email" class="form-control" id="email2" name="email" placeholder="beispiel.beispiel@gmx.de" required>    
             </div>
             <div class="form-group">
-              <label for="phone">Telefon:</label>
+              <i class="fa-solid fa-phone"></i>&nbsp;<label for="phone">Telefon:</label>
               <input type="tel" class="form-control" id="telefon2" name="telefon" placeholder="0221/112233" required>  
             </div>
             <div class="form-group">
-              <label for="type">* Art der Kleidung:</label>
+              <i class="fa-solid fa-shirt"></i>&nbsp;<label for="type">* Art der Kleidung:</label>
               <select class="form-control" id="type2" name="type" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Oberteile">Oberteile</option>
@@ -168,7 +173,7 @@
                 <option value="Schuhe">Schuhe</option>
                 <option value="Accessoires">Accessoires</option>
               </select>
-              <label for="area">* Aktuelles Krisengebiet:</label>
+              <i class="fa-solid fa-flag"></i>&nbsp;<label for="area">* Aktuelles Krisengebiet:</label>
               <select class="form-control" id="area2" name="area" required>
                 <option value="">Bitte auswählen</option>
                 <option value="Afghanistan">Afghanistan</option>
@@ -179,15 +184,15 @@
               </select>
             </div>  
             <div class="form-group">
-              <label for="address">* Straße und Hausnummer</label>
+              <i class="fa-solid fa-address-book"></i>&nbsp;<label for="address">* Straße und Hausnummer</label>
               <input type="text" class="form-control" id="straseHausnummer2" name="straseHausnummer" placeholder="Jans Neumann Straße 13" required>
             </div>
             <div class="form-group">
-              <label for="address">* Stadt</label>
+              <i class="fa-solid fa-city"></i>&nbsp;<label for="address">* Stadt</label>
               <input type="text" class="form-control" id="stadt2" name="stadt" placeholder="Köln" required>
             </div>
             <div class="form-group">
-              <label for="address">* Postleitzahl</label>
+              <i class="fa-solid fa-location-dot"></i>&nbsp;<label for="address">* Postleitzahl</label>
               <input type="text" class="form-control" id="postleitzahl2" name="postleitzahl2" placeholder="50667" required>
             </div>    
           </form>
@@ -203,47 +208,45 @@
   </div>
   
  <!-- Galerie-->
- <div class="container-galerie mx-auto px-4">
+ <div class="container-galerie mx-auto " id="container-galerie">
   <div class="row">
-    <div class="mx-auto">
-      <div class="text-center">
-        <h2>Gutes tun</h2>
-      </div>
+    <div class="mx-auto p-2">
+      <div class=" card text-black text-center bg-light">
+        <h2>Galerie</h2>
+      </div> 
     </div>
   </div>
   <div class="row ">
-    <div class="col-md-4 p-2">
+    <div class="col-md-6 col-lg-6 p-2">
       <a href="#">
-        <img src="Bilder/afghanistan-spende.jpeg" class="img-thumbnail d-inline-block mx-auto">
+        <img src="afghanistan-spende.jpeg" class="img-thumbnail d-inline-block mx-auto">
       </a>
     </div>
-    <div class="col-md-4 p-2">
+    <div class="col-md-6 col-lg-6 p-2">
       <a href="#">
-        <img src="Bilder/kleiderspende-richtig-spenden.jpeg" class="img-thumbnail d-inline-block mx-auto">
+        <img src="kleiderspende-richtig-spenden.jpeg" class="img-thumbnail d-inline-block mx-auto">
       </a>
     </div>
-    <div class="col-md-4 p-2">
+    <div class="col-md-12 col-lg-12 p-2">
       <a href="#">
-        <img src="Bilder/red cross.jpeg" class="img-thumbnail d-inline-block mx-auto">
+        <img src="red cross.jpeg" class="img-thumbnail d-inline-block mx-auto">
       </a>
     </div>
   </div>
 </div>
 
-
-
   </main>
    <!--Footer-->
-    <footer class="bg-light text-center fixed  ">
+    <footer class="bg-light text-center fixed" id="footer-link">
       <div class="container p-5">
         <div class="row align-items-center justify-content-center">
             <h5> Rechtliche Hinweise</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Impressum</a></li>
+              <li><a href="#" id="impressum-link">Impressum</a></li>
               <li><a href="#">Datenschutz</a></li>
               <li><a href="#">Nutzungsbedingungen</a></li>
             </ul>
-            <div class="mx-auto" >
+            <div class="mx-auto" id="kontakt" >
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="mailto:your-email-address"><i class="fa-solid fa-envelope"></i></a>
