@@ -64,6 +64,16 @@ $(document).ready(function() {
             // Zeigt eine Fehlermeldung an, wenn die Postleitzahl nicht mit '50' beginnt
             alert('Die Postleitzahl muss mit "50" beginnen.');
           }
-        });                          
+        }); 
+        
+        $("#impressum-link").click(function(event) {
+            $.getJSON("impressum.json", function(data) {
+              // JSON Impressum Daten werden angezeigt und formatiert
+              var jsonString = JSON.stringify(data, null, 2).replace(/[{}]/g, '').replace(/\\n/g, "<br>").replace(/\"/g, "");
+              // Alert Box anzeige
+              alert(jsonString);
+            });
+          });
+          
       });      
 ;
