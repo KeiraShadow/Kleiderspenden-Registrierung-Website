@@ -53,7 +53,7 @@ main {
 
 .container-background {
    /* border: 1px solid #ccc; *//* border style and color */
-    background-image: url('cbd_hangers-scaled.jpeg'); /* background image */
+    background-image: url('./Bilder/cbd_hangers-scaled.jpeg'); /* background image */
     background-size: cover; /* scales the image to cover the entire container */
     background-position: top; /* positions the image at the top of the container */
     padding: 60px;  /* adds padding to the container */
