@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <!-- Seitentitel --> 
+  <title>Kölner-Kleiderspende-Website</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- Bootstrap JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <!--FontAwesome-->
+   <script src="https://kit.fontawesome.com/1c50180c6e.js" crossorigin="anonymous"></script>
+  <!-- CSS Datei mit eignen Styles die Bootstrap nicht abdeckt-->
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+<body>
+    <!-- Navbar -->
+    <header>   
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+        <a class="navbar-brand mx-auto" href="#">
+          <!--Logo-->
+          <img class="img-responsive" src="icon.png">
+        </a>
+        <a class="navbar-brand text-center mx-auto" href="#">Kölner-Kleiderspende</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navigation" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navigation">
+          <div class="navbar-nav ">
+            <a class="nav-item nav-link active" href="#accordionheader">Kleider spenden</a>
+            <a class="nav-item nav-link" href="#container-galerie">Galerie</a>
+            <a class="nav-item nav-link" href="#kontakt">Kontakt</a>
+            <a class="nav-item nav-link" href="#impressum-link">Über uns</a>
+          </div>
+        </div>
+      </nav>
+    </header> 
+    
+  <!-- Section 1 Überschrift und Eineitung-->
+  <main>
+    <div class="container-background">
+    <div class="card text-black text-center ">
+      <div class="card-header">
+        <h1>Kleider spenden und Gutes tun</h1>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Haben Sie Kleidung, die Sie nicht mehr nutzen? 
+          <br>Ihnen ist diese jedoch zu schade, um sie zu entsorgen? 
+          <br>Dann spenden Sie doch! 
+          <br>Wir freuen uns darauf, Ihre Kleiderspende in eine bedürftige Region Ihrer Wahl zu bringen.
+        </p>     
+      </div>
+    </div>
+  </div>
+   
+   <!--Placeholder-->
+   <p style="margin-top:60px"></p>
+
+  <!-- Accordion title und Anweisungen-->
+  <div class="card text-black text-center bg-light">
+    <div class="card-header" id="accordionheader">
+      <h2>Vielen Dank für Ihre Spende!</h2>
+     </div>
+      <p>Hier sind die Details:</p>
+     <div class="data">
+      <section id="data">
+      </section> 
+      </div>
+      <div class="data2">
+      <section id="data2">
+      </section>
+      </div>
+  </div>               
+  
+ 
+
+  </main>
+   <!--Footer-->
+    <footer class="bg-light text-center fixed" id="footer-link">
+      <div class="container p-5">
+        <div class="row align-items-center justify-content-center">
+            <h5> Rechtliche Hinweise</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" id="impressum-link">Impressum</a></li>
+              <li><a href="#">Datenschutz</a></li>
+              <li><a href="#">Nutzungsbedingungen</a></li>
+            </ul>
+            <div class="mx-auto" id="kontakt" >
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="mailto:your-email-address"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="mx-auto" >
+            <p>&copy; 2023 Kleiderspenden Website Footer. Alle Rechte vorbehalten.</p> 
+            </div>
+        </div>
+      </div>
+    </footer>
+  <!--Javascript Einbindung-->
+    <script src="script.js"></script>
+</body>
+</html>
