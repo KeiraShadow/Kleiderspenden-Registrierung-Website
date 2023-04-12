@@ -20,7 +20,6 @@ header li a {
 
 
 .navbar {
-    /*  position: flex;  it should be fixed but for some reason it moves when it is fixed and it doesnt when its flex????*/
     top: 0px;
     width: 100%;
     z-index: 999;
@@ -37,14 +36,10 @@ header li a {
 
   body {
     height: 125vh; 
-    /*background-image: url('https://www.closetsbydesign.com/wp-content/uploads/2020/01/cbd_hangers-scaled.jpg');*/
-   /* background-image: url('cbd_hangers-scaled.jpeg'); */
     background-color: rgb(199, 178, 163); 
     background-size: cover;
     font-family: sans-serif;
-    /*margin-top: 250px; */
-    /* padding: 30px; */
-    /*padding-bottom: 100px; */
+
 }
  
 main {
@@ -52,8 +47,7 @@ main {
 } 
 
 .container-background {
-   /* border: 1px solid #ccc; *//* border style and color */
-    background-image: url('cbd_hangers-scaled.jpeg'); /* background image */
+    background-image: url('./Bilder/cbd_hangers-scaled.jpeg'); /* background image */
     background-size: cover; /* scales the image to cover the entire container */
     background-position: top; /* positions the image at the top of the container */
     padding: 60px;  /* adds padding to the container */
